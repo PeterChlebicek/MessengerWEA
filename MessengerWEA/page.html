@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Messenger</title>
+  <link rel="stylesheet" type="text/css" href="page.css">
+  <link rel="shortcut icon" type="image/png" href="mess_favicon.png">
+  <script src="page.js"></script>
+</head>
+<body>
+  <form action = "page.php" method="post">
+  <div class="container">
+    <div class="header">
+      <h1>Messenger</h1>
+      <div class="user-actions">
+        <a href="login.html">Přihlášení</a>
+        <a href="register.html">Registrace</a>
+      </div>
+    </div>
+    <div id="friendlist">
+      <div class="friend selected" onclick="selectFriend('bob')">Bob</div>
+      <div class="friend" onclick="selectFriend('alice')">Alice</div>
+      <div class="friend" onclick="selectFriend('charlie')">Charlie</div>
+    </div>
+    <div id="message-container">
+      <div id="message-display">
+      </div>
+      <div class="header">
+        <div id="current-friend"></div>
+      </div>
+      <div id="messages"></div>
+      <form id="message-form" method="post">
+        <input type="text" id="message-input" name="message" placeholder="Napište zprávu" required>
+        <input type="text" id="friend-input" name="friend" placeholder="Jméno přítele" required>
+        <button type="submit">Odeslat</button>
+      </form>
+    </div>
+  </div>
+</form>
+</body>
+</html>

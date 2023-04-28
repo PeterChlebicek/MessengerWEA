@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registrace</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="shortcut icon" type="image/png" href="mess_favicon.png">
+</head>
+<body>
+	<form action = "register.php" method="post">
+	<div class="login-page">
+		<div class="form">
+			<form id="register-form">
+				<input type="username" placeholder="Uživatelské jméno"  name="username" required>
+				<input type="password" placeholder="Heslo" name="password" required>
+				<input type="email" placeholder="E-mail"  name="email" required>
+				<button type="submit">Registrovat se</button>
+				<p class="message">Už máte účet? <a href="login.html">Přihlásit se</a></p>
+			</form>
+		</div>
+	</div>
+</form>
+	<script src="register.js"></script>
+</body>
+</html>
